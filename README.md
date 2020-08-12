@@ -1,3 +1,15 @@
+Evan's readme for busy people:
+
+I've added a very simple gui system to navigate to the video you want to jumpcut and a single prompt that asks you for the silent speed multiplier. There are several additional default parameters in the jumpcutter.py script which you might need to edit to match your video format. In my case I have the --frame_rate set to 30fps and the audio --sample_rate set to 48000khz.
+
+The hardest part of running this program is installing FFMPEG and Python. Each program must be accessible via command line because the jumpcutter script sends commands to the system via command line. On windows, python and ffmpeg must be added to the "PATH" in the Environment Variables.
+
+To run the GUI double click the jumpcutterGUI.py file and navigate to the file you want to remove or reduce silence from and then enter the silence speed multiplier. The output file will appear in the folder with the same name as the original plus the speed.
+
+Happy Cutting!
+
+----------------------------------------------------------------------------------
+Carykh's original readme:
 # jumpcutter
 Automatically edits videos. Explanation here: https://www.youtube.com/watch?v=DQ8orIurGxw
 
