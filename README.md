@@ -5,13 +5,17 @@ Evan's installation instructions for busy people:
 
 I've added a very simple gui system to navigate to the video you want to jumpcut and a single prompt that asks you for the silent speed multiplier. There are several additional default parameters in the jumpcutter.py script which you might need to edit to match your video format. In my case I have the --frame_rate set to 30fps and the audio --sample_rate set to 48000khz.
 
-The hardest part of running this program is installing ffmpeg and Python, plus all the packages that carykh uses in jumpcutter. Python and ffmpeg must be accessible via command line because the jumpcutter script sends commands to the system via command line. On windows, python and ffmpeg must be added to the "PATH" in the Environment Variables.
+The hardest part of running this program is installing ffmpeg and Python. Python and ffmpeg must be accessible via command line because the jumpcutter script sends commands to the system via command line. On windows, python and ffmpeg must be added to the "PATH" in the Environment Variables.
 
 On mac this video might help: https://www.youtube.com/watch?time_continue=277&v=8nbuqYw2OCw&feature=emb_logo
 
-Now that python and ffmpeg are installed, run the script (by double clicking or from command line) and when it fails just install the missing package like this: "pip install \<packagename\>" "pip install pyautogui" for example. (I hope to find a better method of dependency management in the future.)
+Now that python and ffmpeg are installed, navigate to the jumpcutter folder and run this command: "pip install -r requirements.txt"
 
-To run the GUI double click the jumpcutterGUI.py file and navigate to the file you want to remove or reduce silence from and then enter the silence speed multiplier. The output file will appear in the same folder as the original with a modified name.
+This will install the package dependencies for the program.
+
+To run the GUI, double click the jumpcutterGUI.py file and navigate to the file you want to process. The output file will appear in the same folder as the original file.
+
+If the TEMP folder is not deleted, the script will crash. The script should automatically delete the folder usually.
 
 Happy Cutting!
 
