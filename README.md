@@ -1,21 +1,32 @@
 Jumpcutter speeds up or cuts out silent time from your videos.
-See carykh's original readme below
+See carykh's original readme below for more details. Video explanation here: https://www.youtube.com/watch?v=DQ8orIurGxw
 
-Evan's installation instructions for busy people:
+1. Installing python and ffmpeg:
 
-I've added a very simple gui system to navigate to the video you want to jumpcut and a single prompt that asks you for the silent speed multiplier. There are several additional default parameters in the jumpcutter.py script which you might need to edit to match your video format. In my case I have the --frame_rate set to 30fps and the audio --sample_rate set to 48000khz.
+    Download python: https://www.python.org/downloads/
+    Download FFmpeg: https://ffmpeg.org/download.html
 
-The hardest part of running this program is installing ffmpeg and Python. Python and ffmpeg must be accessible via command line because the jumpcutter script sends commands to the system via command line. On windows, python and ffmpeg must be added to the "PATH" in the Environment Variables.
+    Python and FFmpeg must be accessible via command line therefore both programs must be added to the path.
 
-On mac this video might help: https://www.youtube.com/watch?time_continue=277&v=8nbuqYw2OCw&feature=emb_logo
+    On Windows, check the box to add python to environment variables.
+    FFmpeg comes in a folder which you can add to program files. 
+    On windows FFmpeg must be added manually to the path.
 
-Now that python and ffmpeg are installed, navigate to the jumpcutter folder and run this command: "pip install -r requirements.txt"
+    On mac follow this guide for ffmpeg: https://www.youtube.com/watch?time_continue=277&v=8nbuqYw2OCw&feature=emb_logo
 
-This will install the package dependencies for the program.
+    On mac follow this guide for python: https://www.youtube.com/watch?v=TgA4ObrowRg
 
-To run the GUI, double click the jumpcutterGUI.py file and navigate to the file you want to process. The output file will appear in the same folder as the original file.
+    Test that each is installed by typing calling them from the command line. (quit() to exit python)
 
-If the TEMP folder is not deleted, the script will crash. The script should automatically delete the folder usually.
+2. Install package dependencies:
+
+    Open a terminal and navigate to the jumpcutter folder and run this command: "pip install -r requirements.txt"
+
+3. Run the program:
+    
+    Double click the jumpcutterGUI.py file and navigate to the file you want to process. The output file will appear in the same folder as the original file.
+
+(Note: If the TEMP folder is not deleted, the script will crash. The script should automatically delete the folder usually. The TEMP folder is in the same folder as the script.)
 
 Happy Cutting!
 
