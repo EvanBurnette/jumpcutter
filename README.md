@@ -20,7 +20,7 @@ See carykh's original readme below for more details. Video explanation here: htt
 
     On mac follow this guide for python: https://www.youtube.com/watch?v=TgA4ObrowRg
 
-    Test that each is installed by typing calling them from the command line. (quit() to exit python)
+    Test that each is installed by entering them on the command line. (quit() to exit python)
 
 2. Install package dependencies:
 
