@@ -1,9 +1,9 @@
-##Purpose
+## Purpose
 
 Jumpcutter speeds up or cuts out silent time from your videos.
 See carykh's original readme below for more details. Video explanation here: https://www.youtube.com/watch?v=DQ8orIurGxw
 
-##Installation
+## Installation
 
 1. Installing python and ffmpeg:
 
